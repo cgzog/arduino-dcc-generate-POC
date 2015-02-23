@@ -1,5 +1,5 @@
 # arduino-dcc-generate
-Arduino-based project to generate DCC timing signals from network or serial-based DCC packets
+A POC (Proof of Cocept) for an Arduino-based project to generate DCC timing signals from network or serial-based DCC packets
 
 This specific repository is a hard coded DCC packet generate intended to show that the DCC timings as specified in the corresponding NMRA specifications can be met (whic it appears they can but only with direct port access, using the more abstract Arduino library calls for dealing with the output ports is too slow).
 
