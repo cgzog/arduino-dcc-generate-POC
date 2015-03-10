@@ -7,7 +7,13 @@
   Direction:             Forward
   Speed Step:            20
   
-  It will pause between packets (during which time no other packets will be sent in this version
+  It will pause between packets (during which time no other packets will be sent in this version.
+  
+  This version uses the highest level port control and timer functions and macros as a first test.
+  
+  Testing has shown that these are too slow and subject to jitter but it's still useful as a very
+  high level reference for what we are trying to do.
+  
  */
 
 #define  DCC_PORT            13
