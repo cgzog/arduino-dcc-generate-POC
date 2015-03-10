@@ -8,7 +8,17 @@
   Direction:             Forward
   Speed Step:            20
   
-  It will pause between packets (during which time no other packets will be sent in this version
+  It will pause between packets (during which time no other packets will be sent in this version)
+  
+  This version attempts to generate a bi-polar "style" DCC output which normally is at approximately
+  2.5v and drops to 0 or rises to 5v.  In order to support this, the DC output pin #8 needs to be tied
+  to both pull up and pull down resistors; the output is placed in a input mode to effectively tristate
+  it when no DCC signal is being generated.  While this is not technically "DCC", it makes packet capture
+  on an oscilliscope much easier to see.
+  
+  In a production deployment, the DCC signal would likely drive an H-bridge to generate the appropriate
+  DCC polarity but for testing, this is easy to work with and view when running.
+  
  */
 
 #define  DCC_PORT            8
